@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <heading>
+    <title>Survey Form Project</title>
+    <meta charset="utf-8" name="viewport">
+    <link rel="stylesheet" href="styles.css">
+  </heading>
+  <h1 id="title">Survey Form</h1>
+  <body>
+    <p id=description>Thanks for participating</p>
+  <form id="survey-form">
+    <fieldset class="info">
+    <ul>
+    <li><p class="info"><label id="name-label" "for="name">Name <input type="text" required id="name" placeholder= "Enter your full name"/></label></p></li>
+    <li><p class="info"><label id="email-label" for="email">Email <input type="email" required id="email" placeholder= "Enter your email"/></label></p></li>
+    <li><p class="info"><label id="number-label" for="number">Age <input type="number" required id="number" placeholder= "Enter your age" min="13" max="120" pattern=[0-9] class="number"/></label></p></li>
+    </ul>
+    <label for="dropdown"><p class="dropdown">I am currently a <select id="dropdown">
+      <option>(Current role)</option>
+      <option>Student</option>
+      <option>Full-time employee</option>
+      <option>Prefer not to say</option>
+      <option>Other</option>
+    </select></p></label>
+    <p class="rate-service">How would you rate our service?</p>
+    <label for="radio1"> <input checked name="stars" id="radio1" type="Radio" value="bad"><p class="radio">0-3(bad)</p>
+    <label for="radio2"> <input name="stars" type="radio" id="radio2" value="middle"><p class="radio">4-6(okay)</p></label>
+    <label for="radio3"><input name="stars" type="radio" id="radio3" value="good"><p class="radio" >7-10(good)</p></label>
+      <p class="product">What did you enjoy about our service/product?(select many)</p>
+    <ul>
+      <li><label for="checkboxes1"><p class="checkbox"><input id="checkboxes1" type="checkbox" value="quality">  quality of product/service</p></label></li>
+    <li><label for="checkboxes2"><p class="checkbox"><input id="checkboxes2" type="checkbox" value="support">  Customer support</p></label></li>
+    <li><label for="checkboxes3"><p class="checkbox"><input id="checkboxes3" type="checkbox" value="money">  Value for money</p></label></li>
+    <li><label for="checkboxes4"><p class="checkbox"><input id="checkboxes4" type="checkbox" value="easy-use">  Ease of use</p></label></li>
+    <li><label for="checkboxes5"><p class="checkbox"><input id="checkboxes5" type="checkbox"  value="other">  Other(please specifiy)</p></label></li>
+    </ul>
+    <textarea class="comments" cols="50"></textarea>
+     </fieldset>
+     <input type="submit" class="submit" id="submit"/>
+  </form>
+  </body>
+</html>
